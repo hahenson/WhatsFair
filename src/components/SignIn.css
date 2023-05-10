@@ -1,0 +1,19 @@
+/* For singin page */
+
+#signInCard {
+    display: flex;
+    --bs-card-border-color: #2621A6;
+    box-shadow: 4px 4px 5px #4A148C;
+    text-align: center;
+}
+
+#signInCardHeader {
+    color: #ffffff;
+    background: linear-gradient(45deg, #2621A6, #c669ff);
+    animation: hue-rotate 2s linear infinite alternate;
+}
+
+#signInInput.form-control {
+    border-color: #2621A6;
+    text-align: center;
+}

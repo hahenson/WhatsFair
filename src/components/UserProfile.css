@@ -1,0 +1,50 @@
+/* For logged in user profile page */
+
+
+/* User's profile card */
+#userCard {
+    color: #ffffff;
+    --bs-card-border-color: #4A148C;
+    box-shadow: 4px 4px 5px #4A148C;
+}
+
+#userCardHeader {
+    background-color: #734b6d;
+}
+
+
+/* User's profile fair cards */
+#userFairCard {
+    --bs-card-border-color: #ffc107;
+    box-shadow: 4px 4px 5px #4A148C;
+}
+
+#userFairCard:hover {
+    transform: scale(1.025);
+}
+
+#fairCardHeader {
+    background-color: #ffc1076b;
+}
+
+#userFairImg {
+    border-radius: 5px;
+    width: 45%;
+    height: 85%;
+}
+
+#fairText {
+    width: 55%;
+}
+
+#userFairCardBtn {
+    margin: 5px;
+}
+
+#userFairCardBtn:hover {
+    transform: scale(1.05);
+}
+
+#userFairCardBtn.btn-warning {
+    --bs-btn-bg: #ffc1076b;
+}

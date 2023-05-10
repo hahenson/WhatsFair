@@ -1,0 +1,36 @@
+#btn-edit-event {
+    margin: 5px;
+}
+
+#btn-delete {
+    margin: 5px;
+}
+
+#btn-edit-event:hover {
+    transform: scale(1.05);
+}
+
+#btn-delete:hover {
+    transform: scale(1.05);
+}
+
+#btn {
+    --bs-btn-bg: #ffc1076b;
+}
+
+#editFairForm {
+    --bs-card-border-color: #ffc107;
+    box-shadow: 4px 4px 5px #4A148C;
+}
+
+.btn.btn-edit {
+    background-color: #f5ba13;
+    border: 1px #42275a;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+  }
+  
+  .btn-edit:hover {
+    background-color: #f5ba13;
+    border: 2px solid #42275a;
+  }
+  

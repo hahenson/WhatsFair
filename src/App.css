@@ -1,0 +1,522 @@
+body {
+  background-color: lightgoldenrodyellow;
+  max-height: 100%;
+}
+
+/* Sign up button on welcome page */
+.WelcomeBtn {
+  margin-bottom: 20px;
+  background-color: #4A148C;
+  color: whitesmoke;
+  font-size: 20px;
+  border-radius: 35px;
+  padding: 10px;
+}
+
+/* What's Fair Title on Welcome Page */
+.title {
+  font-weight: 700;
+}
+
+/* Phone image on Welcome Page */
+.Phone {
+  margin: 24px;
+  rotate: 5deg;
+  filter: drop-shadow(0 0 2px black)
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  position: relative;
+  min-height: 100%;
+}
+
+h1 {
+  font-weight: bolder
+}
+
+/* 3 emojis & conent on Welcome Page */
+.itemBox {
+  padding: 7% 15%;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* 3 emojis & conent on Welcome Page */
+.emoji {
+  margin: 0 auto 20px;
+  font-size: 400%;
+}
+
+/* weather api div */
+
+.WeatherAPI {
+  background-image: linear-gradient(#42275a, #734b6d);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+/* style of location(state) on welcome page */
+.location {
+  font-weight: bolder;
+  font-Size: 30px;
+}
+
+/* style of temp number on welcome page */
+.tempBox {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Check Temp Button */
+.APIbutton {
+  color: black;
+  font-weight: 600;
+  background-color: #f5ba13;
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  color: whitesmoke;
+  background: linear-gradient(45deg, #2621A6, #c669ff);
+  animation: hue-rotate 2s linear infinite alternate;
+}
+
+@keyframes hue-rotate {
+  to {
+    filter: hue-rotate(90deg);
+  }
+}
+
+/* style of input field on welcome page */
+.searchbox {
+  height: 20px;
+  margin-bottom: 15px;
+}
+
+/* style of weather description on welcome page */
+.weatherDescription {
+  font-size: 30px;
+}
+
+.rotatingText {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* text disappearing/appearing */
+.rotatingText-adjective {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0;
+  position: relative;
+  padding: 20px, 50px, 20px, 0;
+  color: darkmagenta;
+}
+
+/* word Engaging disappearing/appearing */
+.rotatingText-adjective:nth-of-type(1) {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-delay: 1.5s;
+}
+
+/* word Fun disappearing/appearing */
+.rotatingText-adjective:nth-of-type(2) {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-delay: 2.5s;
+}
+
+/* word Friendly disappearing/appearing */
+.rotatingText-adjective:nth-of-type(3) {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-delay: 3.5s;
+}
+
+/* word Perfect disappearing/appearing */
+.rotatingText-adjective:nth-of-type(4) {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-delay: 4.5s;
+}
+
+/* word Perfect disappearing/appearing */
+.rotatingText-adjective:nth-of-type(5) {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-delay: 5.5s;
+}
+
+
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: (0, 50px, 0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: (0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+
+  }
+}
+
+.visble {
+  display: flex;
+  top: 100px;
+}
+
+/* Error Page */
+.Error {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+
+}
+
+/* leaving Comment box */
+
+.ChatPicture {
+  height: 30px;
+  width: 30px;
+}
+
+.custom-search {
+  position: relative;
+  width: 300px;
+}
+
+.custom-search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.custom-search-button {
+  margin-top: 3px;
+  background: #f5ba13;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+}
+
+/* About Us section */
+
+.aboutHeading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.CardImage {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.card-header {
+  align-items: center;
+
+}
+
+.card {
+  margin: 10px;
+  border: solid black 1px;
+}
+
+.aboutUsButton {
+  background-color: #4A148C;
+  color: white;
+  height: 20px;
+}
+
+/* Fairlist style section */
+
+.fairlist {
+  margin-top: 5px;
+}
+
+#divSearch {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 15px;
+}
+
+.searchInputs{
+  /* height: 40px; */
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+#magnify {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-left: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+}
+
+#listCol {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#fairlistCard {
+  display: flex;
+  height: 450px;
+  max-width: 450px;
+  background-color: #f9f1fe;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 5px #4A148C;
+}
+
+#fairlistCard:hover {
+  /* box-shadow: 4px 4px 5px #4A148C; */
+  transform: scale(1.15);
+}
+
+#fairCardTitle {
+  display: flex;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.viewButton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.divFairImg {
+  display: flex;
+  object-fit: fill;
+  width: auto;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-top {
+  box-shadow: 2px 2px 3px;
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#fairCardLocation {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#fairCardDates {
+  text-align: center;
+}
+
+/* Fair Details page styling */
+
+#fairImage {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 420px;
+  max-height: 420px;
+  transition: all 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 19px 38px, rgba(0, 0, 0, 0.5) 0px 15px 12px;
+}
+
+#fairImage:hover {
+  transform: scale(1.15);
+}
+
+#div3 {
+  margin-top: 10px;
+}
+
+#detailTitle {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#detailLocation {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 5px;
+}
+
+#detailDates {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 5px;
+}
+
+#divDetailImg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#fairDesc {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+#canEdit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#divWebLink {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#editIcon, #delFairBtn {
+  color: #42275a;
+}
+
+#commentBubble {
+  background-color: #f9f1fe;
+  border: 2px solid #4A148C;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+  width: fit-content;
+  min-width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+}
+
+.btn-secondary {
+  background-color: #42275a;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+}
+
+.btn-secondary:hover {
+  background-color: #c669ff;
+}
+
+.btn-outline-secondary {
+  color: #42275a;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #42275a;
+}
+
+.btn-primary {
+  background-color: #42275a;
+  border: 1px #42275a;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+}
+
+.btn-primary:hover {
+  background-color: #c669ff;
+  border: 2px solid #42275a;
+}
+.buttonFormCombine{
+  display: flex;
+}
+.buttonSearchComment{
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  right: 40px;
+  background-color: #f5ba13;
+
+}
+
+
+.Button {
+  padding-left: 5px;
+}
+
+#returnBtn {
+  display: flex;
+  justify-content: end;
+}
